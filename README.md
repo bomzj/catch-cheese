@@ -1,16 +1,20 @@
 # Catch the Cheese
-Turn based, 1D simple game, where AI agent based on Artificial Neural Network learns how to play the game on its own by using Q-Learning algorithm.  The goal of the game is to collect cheeses as much as possible avoiding cat.
+Simple 1D turn based game, where AI agent is built upon Artificial Neural Network learns how to play the game on its own by using **Q-Learning** algorithm.  The goal of the game is to collect cheeses as much as possible avoiding cat.
 
 <p align="center">
 	<img src="catch-cheese.gif" alt="Catch Cheese Gameplay"  title="Catch Cheese Gameplay" width="600"/>
 </p>
+
+This game uses:
+- **TensorFlow.js** for machine learning in JavaScript
+- **Vue.js** as engine for game logic and rendering
 
 The code is well commented but requires initial knowledge of Reinforcement Learning. 
 
 ## Prerequisites
 
 - NPM
-- NodeJS
+- Node.js
 
 #### Optional:
 
@@ -19,8 +23,6 @@ The code is well commented but requires initial knowledge of Reinforcement Learn
 - Visual Studio Code Extensions:
   - Debugger for Chrome
   - Vetur
-
-
 
 ## Installing
 ```
