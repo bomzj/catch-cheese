@@ -7,7 +7,17 @@
 <script>
 export default {
   name: 'Trainer',
-  props: ['agent'],
+  props: ['agent', 'game'],
+  data() {
+    return {
+      initialGamePace: this.game.pace
+    }
+  },
+  watch: {
+   'agent.isTraining': function(value){
+      if (!value) this.game.pace = this.initialGamePace;
+    }
+  },
   computed: {
     buttonTitle() {
       var title = "Train Agent";
@@ -21,6 +31,7 @@ export default {
   methods: {
     trainAgent() {
       this.agent.isTraining = true;
+      this.game.pace = 0;
     }
   }
 }
